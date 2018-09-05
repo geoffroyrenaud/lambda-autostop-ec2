@@ -5,8 +5,8 @@ resource "aws_cloudwatch_event_rule" "event_rule" {
 }
 
 resource "aws_cloudwatch_event_target" "event_target" {
-  rule  = "${aws_cloudwatch_event_rule.event_rule.name}"
-  arn = "${aws_lambda_function.lambda.arn}"
+  rule = "${aws_cloudwatch_event_rule.event_rule.name}"
+  arn  = "${aws_lambda_function.lambda.arn}"
 }
 
 resource "aws_lambda_permission" "allow_cloudwatch_to_call" {

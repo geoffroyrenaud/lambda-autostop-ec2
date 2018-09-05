@@ -9,5 +9,5 @@ variable "lambda_src_code" {
 
 variable "schedule_expression" {
   description = "Schedule for lambda execution"
-  default = "cron(0 20 * * ? *)"
+  default     = "cron(0 20 * * ? *)"
 }
