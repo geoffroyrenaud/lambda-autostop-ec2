@@ -11,13 +11,22 @@ Very usefull in Dev or Sandbox environnement
 ### Terraform
 
 This examples shows how to deploy this lambda function using Terraform.
-To run, configure your AWS provider as described in https://www.terraform.io/docs/providers/aws/index.html
-Running the deployment example
-Run `terraform init && terraform apply` to see it work.
+To run, you need to configure :
+- Edit terraform/main.tf wuth your AWS provider parameters as described in https://www.terraform.io/docs/providers/aws/index.html
+- Edit terraform/variables.tf for schedule CloudWatch Event
+- Running the deployment example : 
+  - Run `terraform init && terraform apply` to see it work.
+Destroy Environnement :
+- To remove the stack: `terraform destroy`
 
 ### Cloudformation
 
+TODO
+
 ### AWS Serverless Application Model (SAM)
+
+TODO
 
 ### Serverless
 
+TODO
